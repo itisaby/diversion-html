@@ -1,0 +1,2567 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Diversion</title>
+    <meta
+      content="DIVERSION is an event organized by ACM-CSI IEM Student Chapter which encourages participants to contribute in open-source. By contributing to an open-source project, participants receive immediate feedback on their development and programming skills."
+      name="description"
+    />
+    <meta
+      content="Open-Source,Hackathon,Github,Open-Source event,projects,mentorship,guidance"
+      name="keywords"
+    />
+
+    <!-- bootstrap new -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link href="/public/assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="/public/assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="/public/assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link
+      href="/public/assets/vendor/boxicons/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="/public/assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="/public/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+    <link rel="icon" href="/public/assets/img/favicon_black.ico" type="image/x-icon" />
+
+    <!-- Template Main CSS File -->
+    <link href="/public/assets/css/style.css" rel="stylesheet" />
+    <style>
+      #logo-img {
+        max-height: 100px;
+      }
+      #mbtn {
+        margin-top: 1.2rem;
+        padding: 10px 60px;
+        opacity: 0.8;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="preloader">
+      <div class="box">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <script>
+      function preloader() {
+        window.addEventListener('load', () => {
+          document.querySelector('.preloader').classList.add('fade-out');
+          setTimeout(() => {
+            document.querySelector('.preloader').style.display = 'none';
+          }, 600);
+        });
+      }
+      preloader();
+    </script>
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top d-flex align-items-center">
+      <div class="container d-flex align-items-center justify-content-between">
+        <div class="logo">
+          <h1 class="text-light">
+            <a href="/">
+              <img
+                src="/public/assets/img/TheD.png"
+                alt="Diversion"
+                id="logo-img" /><span></span
+            ></a>
+          </h1>
+          <!-- Uncomment below if you prefer to use an image logo -->
+          <!-- <a href="index.html"><img src="/public/assets/img/logo.png" alt="" class="img-fluid"></a>-->
+        </div>
+
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li><a class="nav-link scrollto" href="#tracks">Tracks</a></li>
+            <li>
+              <a class="nav-link scrollto" href="#portfolio">Projects</a>
+            </li>
+            <li>
+              <a class="nav-link scrollto" href="/guidelines.html">Guidelines</a>
+            </li>
+            <li>
+              <a
+                class="nav-link scrollto"
+                href="https://www.canva.com/design/DAEw2WoKcJA/Cy5vbx9ExSjIaSL9C2SnOQ/view?utm_content=DAEw2WoKcJA&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton"
+                class="btn-get-started scrollto"
+                target="_blank"
+                >Brochure</a
+              >
+            </li>
+            <li>
+              <!-- <div class="dropdown">
+                <button
+                  class="btn getstarted scrollto dropdown-toggle"
+                  type="button"
+                  id="dropdownMenuButton"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  style="border-radius: 8px"
+                >
+                  Register
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="/register-page"
+                    >For Projects</a
+                  >
+                  <a class="dropdown-item" href="/participant_form"
+                    >For Contributors</a
+                  >
+                </div>
+              </div> -->
+              <!-- <a class="getstarted scrollto" href="/participant_form"
+                >Register</a
+              > -->
+            </li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+        <!-- .navbar -->
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- ======= Hero Section ======= -->
+    <section id="hero" class="d-flex align-items-center">
+      <div class="container">
+        <div class="row gy-4 cent" style="background: transparent">
+          <div
+            class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center"
+            style="background: transparent"
+          >
+            <div class="d-flex flex-row xyz" style="margin-bottom: 40px">
+              <img
+                src="/public/assets/img/clients/about-img2.png"
+                height="70px"
+                width="85px"
+                style="margin: 10px"
+              />
+              <img
+                src="/public/assets/img/clients/uem2.png"
+                height="70px"
+                width="85px"
+                style="margin: 10px"
+              />
+              <img
+                src="/public/assets/img/clients/acm-iem.png"
+                height="70px"
+                width="85px"
+                style="margin: 10px"
+              />
+            </div>
+            <h1 style="font-size: 70px; margin-bottom: 10px">Diversion</h1>
+            <h1>2022</h1>
+            <h2>Diverge into Open-Source</h2>
+          
+              <!-- <a
+                href="/participant_form"
+                class="btn-get-started scrollto"
+                style="border-radius: 5px"
+                >Register</a
+              > -->
+              <!-- to be updated to cloud -->
+              <!-- <a
+                href="https://www.canva.com/design/DAEw2WoKcJA/Cy5vbx9ExSjIaSL9C2SnOQ/view?utm_content=DAEw2WoKcJA&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton"
+                class="btn-get-started scrollto"
+                target="_blank"
+                style="border-radius: 20px"
+                >Brochure</a
+              > -->
+              <!-- <button
+                class="btn-get-started scrollto"
+                type="button"
+                data-toggle="modal"
+                data-target="#exampleModalCenter"
+                style="border-radius: 3%; border: none"
+              >
+                Register
+              </button> -->
+              <div class="social-links  mt-3" >
+                <a
+                  href="https://twitter.com/AcmIem"
+                  class="twitter socl"
+                  target="_blank"
+                  ><i class="bx bxl-twitter"></i
+                ></a>
+                <a
+                  href="https://www.facebook.com/IEMACMStudentChapter"
+                  class="facebook socl"
+                  target="_blank"
+                  ><i class="bx bxl-facebook"></i
+                ></a>
+                <a
+                  href="https://www.instagram.com/acm_csi_iem/"
+                  class="instagram socl"
+                  target="_blank"
+                  ><i class="bx bxl-instagram"></i
+                ></a>
+                <!-- <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a> -->
+                <a
+                  href="https://www.linkedin.com/company/acm-iem/"
+                  class="linkedin socl"
+                  target="_blank"
+                  ><i class="bx bxl-linkedin"></i
+                ></a>
+                <a
+                href="https://www.youtube.com/c/ACMIEM"
+                class="linkedin socl"
+                target="_blank"
+                ><i class="bx bxl-youtube"></i
+              ></a>
+                <!-- <a href="#" class="Github"><i class="bx bxl-github"></i></a> -->
+              </div>
+          
+          </div>
+          <div class="col-lg-6 order-1 order-lg-2 hero-img">
+            <img
+              src="/public/assets/img/hero-img.png"
+              class="img-fluid animated"
+              alt=""
+            />
+          </div>
+        </div>
+        <!-- <div class="video-background">
+          <div class="video-foreground">
+            <iframe
+              src="https://www.youtube.com/embed/dBveXKcE4SA?autoplay=1&mute=1&controls=0&rel=0"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div> -->
+      </div>
+    </section>
+    <!-- End Hero -->
+    <!-- modal start -->
+
+    <div
+      class="modal fade"
+      id="exampleModalCenter"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content rounded-0">
+          <div class="modal-body p-4 px-5">
+            <div class="main-content text-center">
+              <a
+                href="#"
+                class="close-btn"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true"><span>&#10006;</span></span>
+              </a>
+              <div class="d-flex row">
+                <div class="mx-auto col-md-6 rbt">
+                  <a
+                    href="/register-page"
+                    class="btn btn-primary"
+                    style="background-color: #eb5d1e; border: none"
+                    >Register your project</a
+                  >
+                </div>
+                <div class="mx-auto col-md-6">
+                  <a
+                    href="/participant_form"
+                    class="btn btn-primary"
+                    style="background-color: #eb5d1e; border: none"
+                    >Register as Participant</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <section>
+      <div class="video-background">
+        <div class="video-foreground container">
+          <iframe
+            width="100%"
+            height="800px"
+            src="https://www.youtube.com/embed/dBveXKcE4SA?autoplay=1&mute=1&controls=0&rel=0"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- modal end -->
+    <main id="main">
+      <!-- ======= About Section ======= -->
+      <section id="about" class="about">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2></h2>
+            <p style="font-size: 35px; color: #4e4039">About Us</p>
+          </div>
+
+          <div class="row justify-content-between">
+            <div
+              class="col-lg-5 d-flex align-items-center justify-content-center about-img"
+            >
+              <img
+                src="/public/assets/img/about-img.png"
+                class="img-fluid"
+                alt=""
+                data-aos="zoom-in"
+              />
+              <!---->
+            </div>
+            <div class="col-lg-6 pt-5 pt-lg-0">
+              <p style="font-size: 18px; text-align: justify">
+                DIVERSION 2022, an event spanning over 3 months, a prelude to
+                Global AI Congress 2022, organized by Department of Computer
+                Science and Engineering, Institute of Engineering & Management,
+                Kolkata and IEM-ACM Student Chapter in association with
+                IEM-CSE-CSI Student Chapter, GDSC-IEM, CIEMK which encourages
+                participants to contribute in open-source. By contributing to an
+                open-source project, participants receive immediate feedback on
+                their development and programming skills.
+              </p>
+              <h3 data-aos="fade-up" style="font-size: 22px">
+                Diversion Major tracks
+              </h3>
+              <p data-aos="fade-up" data-aos-delay="100">
+                In DIVERSION 2022, you can contribute to projects on Web
+                development, App development, artificial intelligence- machine
+                learning and IoT Hardware.
+              </p>
+              <div class="row">
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                  <i class="bx bx-receipt"></i>
+                  <h4>Open source Projects</h4>
+                  <p>
+                    DIVERSION 2022 welcomes you to the world of open-sourcing
+                    with engaging sessions and the opportunity to showcase your
+                    projects. Contribute and collaborate on unique and
+                    innovative projects.
+                  </p>
+                </div>
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                  <i class="bx bx-cube-alt"></i>
+                  <h4>IoT/Robotics</h4>
+                  <p>
+                    DIVERSION 2022 also gives the opportunity to work on
+                    hardware-related domains like IoT and robotics.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <iframe
+          width="100%"
+          height="800px"
+          src="https://www.youtube.com/embed/dBveXKcE4SA?autoplay=1&mute=1&controls=0&rel=0"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe> -->
+      </section>
+      <!-- End About Section -->
+      <section id="Mentors" class="team">
+        <div class="container">
+          <div class="section-title" data-aos="fade-up">
+            <h2>Winners</h2>
+            <p>Winners (Main)</p>
+          </div>
+
+          <div class="row">
+            <div
+              class="col-xl-4 col-lg-4 col-md-6"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img
+                      src="/public/assets/winners/emblish.png"
+                      alt="joe"
+                      class="card-image"
+                    />
+                    <div class="card-details">
+                      <h3>Embellish</h3>
+                      <!-- <h6>Software Engineer/DevRel, SingleStoreDB</h6> -->
+                    </div>
+                  </div>
+                  <div class="flip-card-back jcc">
+                    <h3>Embellish</h3>
+                    <!-- <h6>Software Engineer/DevRel, SingleStoreDB</h6> -->
+                    <br /><br /><br />
+                    <div class="social-icons">
+                      <a
+                        href="https://github.com/Diversion2k22/Embellish"
+                        target="_blank"
+                      >
+                        <button
+                          class="btn btn-warning mx-3 d-flex align-items-center"
+                          type="button"
+                          style="margin-top: auto"
+                        >
+                          <i class="bi bi-github"></i>&nbsp; &#8594;
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-xl-4 col-lg-4 col-md-6"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img
+                      src="/public/assets/winners/te.png"
+                      alt="joe"
+                      class="card-image"
+                    />
+                    <div class="card-details">
+                      <h3>Tech N Science(TE)</h3>
+                      <!-- <h6>Applied Machine Learning Engineer, Apple</h6> -->
+                    </div>
+                  </div>
+                  <div class="flip-card-back jcc">
+                    <h3>Tech N Science(TE)</h3>
+                    <!-- <h6>Applied Machine Learning Engineer, Apple</h6> -->
+                    <br /><br /><br />
+                    <div class="social-icons">
+                      <a
+                        href="https://github.com/Diversion2k22/FunwithScience"
+                        target="_blank"
+                      >
+                        <button
+                          class="btn btn-warning mx-3 d-flex align-items-center"
+                          type="button"
+                          style="margin-top: auto"
+                        >
+                          <i class="bi bi-github"></i>&nbsp; &#8594;
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-xl-4 col-lg-4 col-md-6"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img
+                      src="/public/assets/winners/crft.png"
+                      alt="joe"
+                      class="card-image"
+                    />
+                    <div class="card-details">
+                      <h3>Craftsmen</h3>
+                      <!-- <h6>Building @naas.ai - open source data platform</h6> -->
+                    </div>
+                  </div>
+                  <div class="flip-card-back jcc">
+                    <h3>Craftsmen</h3>
+                    <!-- <h6>Building @naas.ai - open source data platform</h6> -->
+                    <br /><br /><br />
+                    <div class="social-icons">
+                      <a
+                        href="https://github.com/Diversion2k22/craftsmen"
+                        target="_blank"
+                      >
+                        <button
+                          class="btn btn-warning mx-3 d-flex align-items-center"
+                          type="button"
+                          style="margin-top: auto"
+                        >
+                          <i class="bi bi-github"></i>&nbsp; &#8594;
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="Mentors" class="team">
+        <div class="container">
+          <div class="section-title" data-aos="fade-up">
+            <p>Winners (Beginners)</p>
+          </div>
+
+          <div class="row">
+            <div
+              class="col-xl-6 col-lg-6 col-md-6"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img
+                      src="/public/assets/winners/sort.png"
+                      alt="joe"
+                      class="card-image"
+                    />
+                    <div class="card-details">
+                      <h3>Sorteria(SO)</h3>
+                      <!-- <h6>Software Engineer/DevRel, SingleStoreDB</h6> -->
+                    </div>
+                  </div>
+                  <div class="flip-card-back jcc">
+                    <h3>Sorteria(SO)</h3>
+                    <!-- <h6>Software Engineer/DevRel, SingleStoreDB</h6> -->
+                    <br /><br /><br />
+                    <div class="social-icons">
+                      <a
+                        href="https://github.com/Diversion2k22/SorteriaDiversion2k22"
+                        target="_blank"
+                      >
+                        <button
+                          class="btn btn-warning mx-3 d-flex align-items-center"
+                          type="button"
+                          style="margin-top: auto"
+                        >
+                          <i class="bi bi-github"></i>&nbsp; &#8594;
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-xl-6 col-lg-6 col-md-6"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img
+                      src="/public/assets/winners/tapri.jpg"
+                      alt="joe"
+                      class="card-image"
+                    />
+                    <div class="card-details">
+                      <h3>Tapri</h3>
+                      <!-- <h6>Applied Machine Learning Engineer, Apple</h6> -->
+                    </div>
+                  </div>
+                  <div class="flip-card-back jcc">
+                    <h3>Tapri</h3>
+                    <!-- <h6>Applied Machine Learning Engineer, Apple</h6> -->
+                    <br /><br /><br />
+                    <div class="social-icons">
+                      <a
+                        href="https://github.com/Diversion2k22/TAPRI"
+                        target="_blank"
+                      >
+                        <button
+                          class="btn btn-warning mx-3 d-flex align-items-center"
+                          type="button"
+                          style="margin-top: auto"
+                        >
+                          <i class="bi bi-github"></i>&nbsp; &#8594;
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="Mentors" class="team">
+        <div class="container">
+          <div class="section-title" data-aos="fade-up">
+            <p>Top Contributors</p>
+          </div>
+          <table class="table">
+            <tbody>
+           
+              <tr>
+                <td>BlackDeath1107 (Soham Sengupta)</td>
+                <td>soham-b-github (Soham Bhattacharya)</td>
+              </tr>
+              <tr>
+                <td>
+                  Rohit-554 (Rohit Kumar)
+                </td>
+                <td>1HazArd1 (Aakash Sinha)</td>
+              </tr>
+              <tr>
+                <td>siddhi-244 (Siddhi Bhanushali)</td>
+                <td>Dhyey17 (Dhyey Vyas)</td>
+              </tr>
+              <tr>
+                <td>mrudulkolambe (Mrudul Kolambe)</td>
+                <td> Sanskruti02 (Sanskruti Palekar)
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  naveen8801 (Naveen)
+                </td>
+                <td>SubratSahai (Subrat Sahai)</td>
+              </tr>
+              <tr>
+                <td>Amit366 (Amit Kumar Mishra)</td>
+                <td>KushalGhosh9899 (Kushal Ghosh)</td>
+              </tr>
+              <tr>
+                <td>
+                  chaitak-gorai (Chaitak)
+                </td>
+                <td>techsouvik (Souvik)</td>
+              </tr>
+              <tr>
+                <td>rohan26062001 (Rohan Das)</td>
+                <td>kanisht09 (Kanisht Agarwal)</td>
+              </tr>
+              <tr>
+                <td>satatya (Satatya De)</td>
+                <td>SBasu (Subhrodeep Basu)</td>
+              </tr>
+              <tr>
+                <td>ihsingh2 (Himanshu Singh)</td>
+                <td> warp007x (Souradeep Atar)</td>
+              </tr>
+             
+        
+              </tr>
+            </tbody>
+          </table> 
+        </div>
+      </section>
+     
+      <section id="Mentors" class="team">
+        <div class="container">
+          <div class="section-title" data-aos="fade-up">
+            <h2>Guest Speakers</h2>
+            <p>Our Speakers !!!</p>
+          </div>
+
+          <div class="row">
+            <div
+              class="col-xl-3 col-lg-3 col-md-6"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img
+                      src="/public/assets/img/team/Joe_Karlsson.jpg"
+                      alt="joe"
+                      class="card-image"
+                    />
+                    <div class="card-details">
+                      <h3>Joe Karlsson</h3>
+                      <h6>Software Engineer/DevRel, SingleStoreDB</h6>
+                    </div>
+                  </div>
+                  <div class="flip-card-back jcc">
+                    <h3>Joe Karlsson</h3>
+                    <h6>Software Engineer/DevRel, SingleStoreDB</h6>
+                    <br /><br /><br />
+                    <div class="social-icons">
+                      <a href="https://twitter.com/JoeKarlsson1" target="_blank"
+                        ><i class="bi bi-twitter"></i
+                      ></a>
+                      <a
+                        href="https://www.facebook.com/joe.karlsson13"
+                        target="_blank"
+                        ><i class="bi bi-facebook"></i
+                      ></a>
+                      <a
+                        href="https://www.instagram.com/joekarlsson/"
+                        target="_blank"
+                        ><i class="bi bi-instagram"></i
+                      ></a>
+                      <a
+                        href="https://www.linkedin.com/in/joekarlsson/"
+                        target="_blank"
+                        ><i class="bi bi-linkedin"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-xl-3 col-lg-3 col-md-6"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img
+                      src="/public/assets/img/team/Logan_Kilpatric.jpg"
+                      alt="joe"
+                      class="card-image"
+                    />
+                    <div class="card-details">
+                      <h3>Logan Kilpatric</h3>
+                      <h6>Applied Machine Learning Engineer, Apple</h6>
+                    </div>
+                  </div>
+                  <div class="flip-card-back jcc">
+                    <h3>Logan Kilpatric</h3>
+                    <h6>Applied Machine Learning Engineer, Apple</h6>
+                    <br /><br /><br />
+                    <div class="social-icons">
+                      <a
+                        href="https://twitter.com/OfficialLoganK"
+                        target="_blank"
+                        ><i class="bi bi-twitter"></i
+                      ></a>
+                      <!-- <a href="" target="_blank"><i class="bi bi-facebook"></i></a> -->
+                      <a
+                        href="https://www.instagram.com/logankilpatrick/"
+                        target="_blank"
+                        ><i class="bi bi-instagram"></i
+                      ></a>
+                      <a
+                        href="https://www.linkedin.com/in/logankilpatrick/"
+                        target="_blank"
+                        ><i class="bi bi-linkedin"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-xl-3 col-lg-3 col-md-6"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img
+                      src="/public/assets/img/team/jeremy.jpg"
+                      alt="joe"
+                      class="card-image"
+                    />
+                    <div class="card-details">
+                      <h3>Jérémy Ravenel</h3>
+                      <h6>Building @naas.ai - open source data platform</h6>
+                    </div>
+                  </div>
+                  <div class="flip-card-back jcc">
+                    <h3>Jérémy Ravenel</h3>
+                    <h6>Building @naas.ai - open source data platform</h6>
+                    <br /><br /><br />
+                    <div class="social-icons">
+                      <a
+                        href="https://twitter.com/ravenel_jeremy"
+                        target="_blank"
+                        ><i class="bi bi-twitter"></i
+                      ></a>
+                      <!-- <a href="" target="_blank"><i class="bi bi-facebook"></i></a> -->
+                      <!-- <a
+                        href="https://www.instagram.com/logankilpatrick/"
+                        target="_blank"
+                        ><i class="bi bi-instagram"></i
+                      ></a> -->
+                      <a
+                        href="https://www.linkedin.com/in/j%C3%A9r%C3%A9my-ravenel-8a396910/"
+                        target="_blank"
+                        ><i class="bi bi-linkedin"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-xl-3 col-lg-3 col-md-6"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img
+                      src="/public/assets/img/team/Praveen.png"
+                      alt="joe"
+                      class="card-image"
+                    />
+                    <div class="card-details">
+                      <h3 style="font-size: 22px">
+                        Praveen Kumar Purushothaman
+                      </h3>
+                      <h6 style="font-size: 12px">
+                        Full Stack JavaScript Specialist / Career Coach / Mentor
+                      </h6>
+                    </div>
+                  </div>
+                  <div class="flip-card-back jcc">
+                    <h3>Praveen Kumar Purushothaman</h3>
+                    <h6>
+                      Full Stack JavaScript Specialist / Career Coach / Mentor
+                      <br />Website ~ LinkedIn ~ YouTube
+                    </h6>
+                    <br /><br /><br />
+                    <div class="social-icons">
+                      <a
+                        href="https://twitter.com/praveenscience"
+                        target="_blank"
+                        ><i class="bi bi-twitter"></i
+                      ></a>
+                      <!-- <a href="" target="_blank"><i class="bi bi-facebook"></i></a> -->
+                      <a
+                        href="https://www.instagram.com/praveenscience/"
+                        target="_blank"
+                        ><i class="bi bi-instagram"></i
+                      ></a>
+                      <a
+                        href="https://www.linkedin.com/in/praveentech/"
+                        target="_blank"
+                        ><i class="bi bi-linkedin"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- <div
+              class="col-xl-3 col-lg-4 col-md-6"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front" style="background-image: url(/public/assets/img/team/team-1.jpg);background-repeat: no-repeat;object-fit: fill;">
+                </div>
+                <div class="flip-card-back">
+                    <h3>Revealing Soon</h3>
+                    <h6>........</h6>
+                    <br><br><br>
+                  <div class="social-icons">
+                    <a href=""><i class="bi bi-twitter"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href=""><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> -->
+          </div>
+        </div>
+      </section>
+
+      <!-- ======= Team Section =======
+      <section id="Mentors" class="team">
+        <div class="container">
+          <div class="section-title" data-aos="fade-up">
+            <h2></h2>
+            <p>Judges</p>
+          </div>
+
+          <div class="row">
+            <div
+              class="col-xl-3 col-lg-4 col-md-6"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div
+                    class="flip-card-front"
+                    style="
+                      background-image: url(/public/assets/img/team/team-1.jpg);
+                      background-repeat: no-repeat;
+                      object-fit: fill;
+                    "
+                  ></div>
+                  <div class="flip-card-back">
+                    <h3>Revealing Soon</h3>
+                    <h6>........</h6>
+                    <br /><br /><br />
+                    <div class="social-icons">
+                      <a href=""><i class="bi bi-twitter"></i></a>
+                      <a href=""><i class="bi bi-facebook"></i></a>
+                      <a href=""><i class="bi bi-instagram"></i></a>
+                      <a href=""><i class="bi bi-linkedin"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-xl-3 col-lg-4 col-md-6"
+              data-aos="zoom-in"
+              data-aos-delay="200"
+            >
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div
+                    class="flip-card-front"
+                    style="
+                      background-image: url(/public/assets/img/team/team-1.jpg);
+                      background-repeat: no-repeat;
+                      object-fit: fill;
+                    "
+                  ></div>
+                  <div class="flip-card-back">
+                    <h3>Revealing Soon</h3>
+                    <h6>........</h6>
+                    <div class="social">
+                      <a href=""><i class="bi bi-twitter"></i></a>
+                      <a href=""><i class="bi bi-facebook"></i></a>
+                      <a href=""><i class="bi bi-instagram"></i></a>
+                      <a href=""><i class="bi bi-linkedin"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-xl-3 col-lg-4 col-md-6"
+              data-aos="zoom-in"
+              data-aos-delay="300"
+            >
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div
+                    class="flip-card-front"
+                    style="
+                      background-image: url(/public/assets/img/team/team-1.jpg);
+                      background-repeat: no-repeat;
+                      object-fit: fill;
+                    "
+                  ></div>
+                  <div class="flip-card-back">
+                    <h3>Revealing Soon</h3>
+                    <h6>........</h6>
+                    <div class="social">
+                      <a href=""><i class="bi bi-twitter"></i></a>
+                      <a href=""><i class="bi bi-facebook"></i></a>
+                      <a href=""><i class="bi bi-instagram"></i></a>
+                      <a href=""><i class="bi bi-linkedin"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-xl-3 col-lg-4 col-md-6"
+              data-aos="zoom-in"
+              data-aos-delay="400"
+            >
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div
+                    class="flip-card-front"
+                    style="
+                      background-image: url(/public/assets/img/team/team-1.jpg);
+                      background-repeat: no-repeat;
+                      object-fit: fill;
+                    "
+                  ></div>
+                  <div class="flip-card-back">
+                    <h3>Revealing Soon</h3>
+                    <h6>........</h6>
+                    <div class="social">
+                      <a href=""><i class="bi bi-twitter"></i></a>
+                      <a href=""><i class="bi bi-facebook"></i></a>
+                      <a href=""><i class="bi bi-instagram"></i></a>
+                      <a href=""><i class="bi bi-linkedin"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> -->
+      <!-- End Team Section -->
+      <section id="Mentors" class="team">
+        <div class="container">
+          <div class="section-title" data-aos="fade-up">
+            <h2></h2>
+            <p>Mentors</p>
+          </div>
+
+          <div class="row">
+            <div
+              class="col-xl-3 col-lg-4 col-md-6"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img
+                      src="/public/assets/img/team/Rahul_rana.jpeg"
+                      alt="joe"
+                      class="card-image"
+                    />
+                    <div class="card-details">
+                      <h3>Rahul Rana</h3>
+                      <h6>SDE Il (L4), Uber</h6>
+                    </div>
+                  </div>
+                  <div class="flip-card-back jcc">
+                    <h3>Rahul Rana</h3>
+                    <h6>SDE Il (L4), Uber</h6>
+                    <br /><br /><br />
+                    <div class="social-icons">
+                      <a
+                        href="https://www.linkedin.com/in/rahul-rana-b713499a"
+                        target="_blank"
+                      >
+                        <button
+                          class="btn btn-warning mx-3 d-flex align-items-center"
+                          type="button"
+                          style="margin-top: auto"
+                        >
+                          <i class="bi bi-linkedin"></i>&nbsp; &#8594;
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-xl-3 col-lg-4 col-md-6"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img
+                      src="/public/assets/img/team/Ramakrishna_Bolisetty.jpg"
+                      alt="joe"
+                      class="card-image"
+                    />
+                    <div class="card-details">
+                      <h3 style="font-size: 22px">Ramakrishna Bolisetty</h3>
+                      <h6 style="font-size: 14px">
+                        Software Engineer III, Walmart Global Tech India
+                      </h6>
+                    </div>
+                  </div>
+                  <div class="flip-card-back jcc">
+                    <h3>Ramakrishna Bolisetty</h3>
+                    <h6>Software Engineer III, Walmart Global Tech India</h6>
+                    <br /><br /><br />
+                    <div class="social-icons">
+                      <a
+                        href="https://www.linkedin.com/in/ramakrishnabolisetty/"
+                        target="_blank"
+                      >
+                        <button
+                          class="btn btn-warning mx-3 d-flex align-items-center"
+                          type="button"
+                          style="margin-top: auto"
+                        >
+                          <i class="bi bi-linkedin"></i>&nbsp; &#8594;
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-xl-3 col-lg-4 col-md-6"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img
+                      src="/public/assets/img/team/Aditya_Thakur_mentor.jpg"
+                      alt="joe"
+                      class="card-image"
+                    />
+                    <div class="card-details">
+                      <h3>Aditya Thakur</h3>
+                      <h6>Developer & Designer</h6>
+                    </div>
+                  </div>
+                  <div class="flip-card-back jcc">
+                    <h3>Aditya Thakur</h3>
+                    <h6>Developer & Designer</h6>
+                    <br /><br /><br />
+                    <div class="social-icons">
+                      <a
+                        href="https://www.linkedin.com/in/aditya--thakur/"
+                        target="_blank"
+                      >
+                        <button
+                          class="btn btn-warning mx-3 d-flex align-items-center"
+                          type="button"
+                          style="margin-top: auto"
+                        >
+                          <i class="bi bi-linkedin"></i>&nbsp; &#8594;
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-xl-3 col-lg-4 col-md-6"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img
+                      src="/public/assets/img/team/Yashovardhan.jpeg"
+                      alt="joe"
+                      class="card-image"
+                    />
+                    <div class="card-details">
+                      <h3 style="font-size: 22px">Yashowardhan Dhananiya</h3>
+                      <h6 style="font-size: 12px">
+                        Associate Consultant, Microsoft
+                      </h6>
+                    </div>
+                  </div>
+                  <div class="flip-card-back jcc">
+                    <h3>Yashowardhan Dhananiya</h3>
+                    <h6>Associate Consultant, Microsoft</h6>
+                    <br /><br /><br />
+                    <div class="social-icons">
+                      <a
+                        href="https://www.linkedin.com/in/yashovardhan99/"
+                        target="_blank"
+                      >
+                        <button
+                          class="btn btn-warning mx-3 d-flex align-items-center"
+                          type="button"
+                          style="margin-top: auto"
+                        >
+                          <i class="bi bi-linkedin"></i>&nbsp; &#8594;
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br /><br /><br />
+          <div class="row">
+            <div
+              class="col-xl-3 col-lg-4 col-md-6"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img
+                      src="/public/assets/img/team/sayan.png"
+                      alt="joe"
+                      class="card-image"
+                    />
+                    <div class="card-details">
+                      <h3>Sayan Sil</h3>
+                      <h6>System Engineer, TCS</h6>
+                    </div>
+                  </div>
+                  <div class="flip-card-back jcc">
+                    <h3>Sayan Sil</h3>
+                    <h6>System Engineer, TCS</h6>
+                    <br /><br /><br />
+                    <div class="social-icons">
+                      <a
+                        href="https://www.linkedin.com/in/sayansil/"
+                        target="_blank"
+                      >
+                        <button
+                          class="btn btn-warning mx-3 d-flex align-items-center"
+                          type="button"
+                          style="margin-top: auto"
+                        >
+                          <i class="bi bi-linkedin"></i>&nbsp; &#8594;
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-xl-3 col-lg-4 col-md-6"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img
+                      src="/public/assets/img/team/soumik.png"
+                      alt="joe"
+                      class="card-image"
+                    />
+                    <div class="card-details">
+                      <h3 style="font-size: 22px">Soumik Nandi</h3>
+                      <h6 style="font-size: 14px">SDE I, Amazon</h6>
+                    </div>
+                  </div>
+                  <div class="flip-card-back jcc">
+                    <h3>Soumik Nandi</h3>
+                    <h6>SDE I, Amazon</h6>
+                    <br /><br /><br />
+                    <div class="social-icons">
+                      <a
+                        href="https://www.linkedin.com/in/soumik-nandi/"
+                        target="_blank"
+                      >
+                        <button
+                          class="btn btn-warning mx-3 d-flex align-items-center"
+                          type="button"
+                          style="margin-top: auto"
+                        >
+                          <i class="bi bi-linkedin"></i>&nbsp; &#8594;
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-xl-3 col-lg-4 col-md-6"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img
+                      src="/public/assets/img/team/prarathana.jpg"
+                      alt="joe"
+                      class="card-image"
+                    />
+                    <div class="card-details">
+                      <h3>Prarthana Shah</h3>
+                      <h6>Data-Scientist, Fractal</h6>
+                    </div>
+                  </div>
+                  <div class="flip-card-back jcc">
+                    <h3>Prarthana Shah</h3>
+                    <h6>Data-Scientist, Fractal</h6>
+                    <br /><br /><br />
+                    <div class="social-icons">
+                      <a
+                        href="https://www.linkedin.com/in/prar-shah/"
+                        target="_blank"
+                      >
+                        <button
+                          class="btn btn-warning mx-3 d-flex align-items-center"
+                          type="button"
+                          style="margin-top: auto"
+                        >
+                          <i class="bi bi-linkedin"></i>&nbsp; &#8594;
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-xl-3 col-lg-4 col-md-6"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img
+                      src="/public/assets/img/team/soham.jpg"
+                      alt="joe"
+                      class="card-image"
+                    />
+                    <div class="card-details">
+                      <h3 style="font-size: 22px">Soham Biswas</h3>
+                      <h6 style="font-size: 12px">
+                        Computing Engineer, CERN, Geneva
+                      </h6>
+                    </div>
+                  </div>
+                  <div class="flip-card-back jcc">
+                    <h3>Soham Biswas</h3>
+                    <h6>Computing Engineer, CERN, Geneva</h6>
+                    <br /><br /><br />
+                    <div class="social-icons">
+                      <a
+                        href="https://www.linkedin.com/in/soham-biswas-590784168/"
+                        target="_blank"
+                      >
+                        <button
+                          class="btn btn-warning mx-3 d-flex align-items-center"
+                          type="button"
+                          style="margin-top: auto"
+                        >
+                          <i class="bi bi-linkedin"></i>&nbsp; &#8594;
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div>
+        <center>
+          <!-- <a href="/mentor_form"
+            ><button
+              type="button"
+              id="mbtn"
+              class="btn btn-warning mx-3 d-flex align-items-center"
+              data-aos="fade-up"
+              style="border-radius: 1.5rem"
+            >
+              Register as a Mentor
+            </button></a
+          > -->
+        </center>
+      </div>
+      <br />
+      <!-- end of mentors -->
+
+      <!---Event partners-->
+
+      <section id="about" class="about">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2></h2>
+            <p style="font-size: 35px; color: #4e4039">Our Event Partners</p>
+          </div>
+
+          <div class="row justify-content-between">
+            <div
+              class="col-lg-4 d-flex align-items-center justify-content-center about-img"
+            >
+              <img
+                src="/public/assets/img/clients/replit.png"
+                class="img-fluid"
+                alt=""
+                data-aos="zoom-in"
+                style="height: 100px"
+              />
+            </div>
+            <div
+              class="col-lg-4 d-flex align-items-center justify-content-center about-img"
+            >
+              <img
+                src="/public/assets/img/clients/xyz.png"
+                class="img-fluid"
+                alt=""
+                data-aos="zoom-in"
+                style="height: 100px"
+              />
+            </div>
+            <div
+              class="col-lg-4 d-flex align-items-center justify-content-center about-img"
+            >
+              <!-- <a href="" target="_blank"> -->
+              <img
+                src="/public/assets/img/clients/karoverify.png"
+                class="img-fluid"
+                alt=""
+                data-aos="zoom-in"
+                style="height: 180px"
+              />
+              <!-- </a> -->
+            </div>
+          </div>
+
+          <div class="row justify-content-between">
+            <div
+              class="col-lg-4 d-flex align-items-center justify-content-center about-img"
+            >
+              <img
+                src="/public/assets/img/clients/craftbrain.jpg"
+                class="img-fluid naas_img"
+                alt=""
+                data-aos="zoom-in"
+                style="height: 50px"
+              />
+            </div>
+            <div
+              class="col-lg-4 d-flex align-items-center justify-content-center about-img"
+            >
+              <img
+                src="/public/assets/img/clients/script.png"
+                class="img-fluid naas_img"
+                alt=""
+                data-aos="zoom-in"
+                style="height: 400px"
+              />
+            </div>
+            <div
+              class="col-lg-4 d-flex align-items-center justify-content-center about-img"
+            >
+              <img
+                src="/public/assets/img/clients/mentro.png"
+                class="img-fluid naas_img"
+                alt=""
+                data-aos="zoom-in"
+                style="height: 180px"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Event partners end-->>
+      <!-- ======= tracks Section ======= -->
+      <section id="tracks" class="tracks section-bg">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Tracks</h2>
+            <p>Choose you track</p>
+          </div>
+
+          <div class="row">
+            <div
+              class="col-md-6 col-lg-3 d-flex align-items-stretch"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
+              <div class="icon-box">
+                <div class="icon"><i class="bx bx-world"></i></div>
+                <h4 class="title"><a href="">Web Dev</a></h4>
+                <p class="description">
+                  Web Development is the building and maintenance of websites;
+                  it’s the work that happens behind the scenes to make a website
+                  look great, work fast and perform well with a seamless user
+                  experience.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="col-md-6 col-lg-3 d-flex align-items-stretch"
+              data-aos="zoom-in"
+              data-aos-delay="200"
+            >
+              <div class="icon-box">
+                <div class="icon"><i class="bx bx-file"></i></div>
+                <h4 class="title"><a href="">App Dev</a></h4>
+                <p class="description">
+                  App Development is the process of creating software
+                  applications. It includes user interface design, programming,
+                  testing and deployment of the application.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="col-md-6 col-lg-3 d-flex align-items-stretch"
+              data-aos="zoom-in"
+              data-aos-delay="300"
+            >
+              <div class="icon-box">
+                <div class="icon"><i class="bx bx-tachometer"></i></div>
+                <h4 class="title"><a href="">AI-ML</a></h4>
+                <p class="description">
+                  Artificial Intelligence and Machine Learning involves the
+                  usage of complex algorithms that automatically learn and
+                  refine the learning from a vast amount of data and data
+                  patterns.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="col-md-6 col-lg-3 d-flex align-items-stretch"
+              data-aos="zoom-in"
+              data-aos-delay="400"
+            >
+              <div class="icon-box">
+                <div class="icon"><i class="bx bxl-dribbble"></i></div>
+                <h4 class="title"><a href="">IoT/Hardware</a></h4>
+                <p class="description">
+                  IoT Hardware includes a wide range of devices such as devices
+                  for routing, bridges, sensors etc. It manages key tasks and
+                  functions such as system activation, security, communication,
+                  etc.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End tracks Section -->
+
+      <section id="about" class="about">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2></h2>
+            <p style="font-size: 35px; color: #4e4039">Supported By</p>
+          </div>
+
+          <div class="row justify-content-between">
+            <div
+              class="col-lg-5 d-flex align-items-center justify-content-center about-img"
+            >
+              <img
+                src="/public/assets/img/clients/julia.png"
+                class="img-fluid"
+                alt=""
+                data-aos="zoom-in"
+                style="height: 100px"
+              />
+              <!---->
+            </div>
+            <div class="col-lg-6 pt-5 pt-lg-0">
+              <p style="font-size: 18px"></p>
+              <h3 data-aos="fade-up" style="font-size: 22px">
+                The Julia Language
+              </h3>
+              <p
+                data-aos="fade-up"
+                data-aos-delay="100"
+                style="text-align: justify"
+              >
+                <b>Julia</b> is a high-level, high-performance, dynamic
+                programming language. While it is a general-purpose language and
+                can be used to write any application, many of its features are
+                well suited for numerical analysis and computational science.
+                Distinctive aspects of Julia's design include a type system with
+                parametric polymorphism in a dynamic programming language; with
+                multiple dispatch as its core programming paradigm. Julia takes
+                part in GSOC
+              </p>
+              <div>
+                <!-- <div><a href="/register-page" class="btn-get-started scrollto">Register</a></div> -->
+                <center>
+                  <a href="https://julialang.org" target="_blank"
+                    ><button
+                      type="button"
+                      id="mbtn"
+                      class="btn btn-warning mx-3 d-flex align-items-center"
+                      data-aos="fade-up"
+                      style="border-radius: 1.5rem"
+                    >
+                      View on Website
+                    </button></a
+                  >
+                </center>
+              </div>
+            </div>
+          </div>
+
+          <div class="row justify-content-between">
+            <div class="col-lg-6 pt-5 pt-lg-0">
+              <p style="font-size: 18px"></p>
+              <h3 data-aos="fade-up" style="font-size: 22px">Naas.ai</h3>
+              <p
+                data-aos="fade-up"
+                data-aos-delay="100"
+                style="text-align: justify"
+              >
+                <b>naas</b> stands for notebooks as a service. Naas augments
+                Jupyter Notebooks by adding micro-services accessible in
+                low-code to easily access data, automation, and AI. The product
+                is based on 3 elements: features, drivers, and templates.The
+                templates enable you to kickstart projects in minutes. They can
+                include low-code drivers that act as connectors to facilitate
+                access to tools, and complex libraries (database, API, ML
+                algorithm...) while the low-code features (scheduling, asset
+                sharing, notifications...) enable faster iteration and
+                deployment of outputs to end-users, in a headless way.
+              </p>
+              <div>
+                <!-- <div><a href="/register-page" class="btn-get-started scrollto">Register</a></div> -->
+                <center>
+                  <a href="https://www.naas.ai" target="_blank"
+                    ><button
+                      type="button"
+                      id="mbtn"
+                      class="btn btn-warning mx-3 d-flex align-items-center"
+                      data-aos="fade-up"
+                      style="border-radius: 1.5rem"
+                    >
+                      View on Website
+                    </button></a
+                  >
+                </center>
+              </div>
+            </div>
+            <div
+              class="col-lg-5 d-flex align-items-center justify-content-center about-img"
+            >
+              <img
+                src="/public/assets/img/clients/naas.png"
+                class="img-fluid naas_img"
+                alt=""
+                data-aos="zoom-in"
+                style="height: 100px"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
+      <!-- ======= Clients Section ======= -->
+      <section id="clients" class="clients section-bg">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2></h2>
+            <p>Our Collaborations</p>
+          </div>
+
+          <div
+            class="clients-slider swiper"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="swiper-wrapper align-items-center">
+              <div class="swiper-slide">
+                <a
+                  href="https://www.linkedin.com/company/girlscript-foundation/"
+                  target="_blank"
+                >
+                  <img
+                    src="/public/assets/img/clients/client-1.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a
+                  href="https://www.linkedin.com/company/msackiit"
+                  target="_blank"
+                >
+                  <img
+                    src="/public/assets/img/clients/client-2.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a
+                  href="https://www.linkedin.com/school/laxminarayan-institute-of-technology"
+                  target="_blank"
+                >
+                  <img
+                    src="/public/assets/img/clients/client-3.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a
+                  href="https://www.linkedin.com/company/the-electronics-club-vit/"
+                  target="_blank"
+                >
+                  <img
+                    src="/public/assets/img/clients/client-10.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a
+                  href="https://www.linkedin.com/company/gdsciem/"
+                  target="_blank"
+                >
+                  <img
+                    src="/public/assets/img/clients/client-4.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a
+                  href="https://www.linkedin.com/school/national-institute-of-technology-rourkela/"
+                  target="_blank"
+                >
+                  <img
+                    src="/public/assets/img/clients/client-5.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a
+                  href="https://www.linkedin.com/company/official-csi-iem/"
+                  target="_blank"
+                >
+                  <img
+                    src="/public/assets/img/clients/client-6.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <!-- <div class="swiper-slide">
+                <a
+                  href="https://www.linkedin.com/company/acm-iem/"
+                  target="_blank"
+                >
+                  <img
+                    src="/public/assets/img/clients/client-7.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </a>
+              </div> -->
+              <div class="swiper-slide">
+                <a
+                  href="https://www.linkedin.com/in/rcoem-google-dsc-92248b220/"
+                  target="_blank"
+                >
+                  <img
+                    src="/public/assets/img/clients/client-8.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+      <!-- End Clients Section -->
+
+      <section id="about" class="about">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2></h2>
+            <p style="font-size: 35px; color: #4e4039">Organized By</p>
+          </div>
+
+          <div class="row justify-content-between">
+            <div
+              class="col-lg-5 d-flex align-items-center justify-content-center about-img"
+            >
+              <img
+                src="/public/assets/img/about-img2.png"
+                class="img-fluid"
+                alt=""
+                data-aos="zoom-in"
+                style="height: 200px"
+              />
+              <!---->
+            </div>
+            <div class="col-lg-6 pt-5 pt-lg-0">
+              <p style="font-size: 18px"></p>
+              <h3 data-aos="fade-up" style="font-size: 22px">
+                Department of Computer Science & Engineering, Institute of
+                Engineering and Management, Kolkata
+              </h3>
+              <p
+                data-aos="fade-up"
+                data-aos-delay="100"
+                style="text-align: justify"
+              >
+                The Computer Science & Engineering Department is one of the
+                oldest engineering departments of Institute of Engineering and
+                Management. Accredited by the NBA and approved by AICTE, it was
+                established in the year 1997 under the affiliation of Kalyani
+                University and subsequently under Maulana Abul Kalam Azad
+                University of Technology (erstwhile West Bengal University of
+                Technology). Right from its inception, it aimed towards
+                imparting quality education with special emphasis on technical
+                knowledge. With access to the research in cutting edge
+                technology, students from this department have maintained a
+                consistent balance between academic excellence and
+                extracurricular activities which is reflected in their
+                achievements in the technical fests, science exhibitions,
+                cultural fests, etc.
+              </p>
+              <div>
+                <!-- <div><a href="/register-page" class="btn-get-started scrollto">Register</a></div> -->
+                <center>
+                  <a
+                    href="https://sites.google.com/iemcal.com/iemk-cse"
+                    target="_blank"
+                    ><button
+                      type="button"
+                      id="mbtn"
+                      class="btn btn-warning mx-3 d-flex align-items-center"
+                      data-aos="fade-up"
+                      style="border-radius: 1.5rem"
+                    >
+                      View on Website
+                    </button></a
+                  >
+                </center>
+              </div>
+            </div>
+          </div>
+
+          <div class="row justify-content-between">
+            <div
+              class="col-lg-5 d-flex align-items-center justify-content-center about-img"
+            >
+              <img
+                src="/public/assets/img/clients/acm-iem.png"
+                class="img-fluid"
+                alt=""
+                data-aos="zoom-in"
+                style="height: 200px"
+              />
+              <!---->
+            </div>
+            <div class="col-lg-6 pt-5 pt-lg-0">
+              <p style="font-size: 18px"></p>
+              <h3 data-aos="fade-up" style="font-size: 22px">
+                IEM-ACM Student Chapter
+              </h3>
+              <p
+                data-aos="fade-up"
+                data-aos-delay="100"
+                style="text-align: justify"
+              >
+                The Association for Computing Machinery (ACM) is an
+                international learned society for computing. It is a non-profit
+                professional membership group with the number of members
+                exceeding 100,000 as of 2011. Its headquarters are based in the
+                techno-hub New York City. ACM is organized into over 171 local
+                chapters with over 500 college and university chapters. The
+                first student chapter was founded in 1961 at the University of
+                Louisiana at Lafayette. The goal of ACM is to delivers resources
+                that advance computing as a science and a profession. IEM
+                Student Chapter enables us to familiarize the people of IEM with
+                all the latest tech trends. IEM ACM Chapter works as a
+                non-profit with students from various professional pursuits as
+                its organizing members. We aim to provide an educational
+                platform for our members to advance the field of Computing. We
+                conduct workshops, seminars and various events to engage our
+                members and provide a nourishing platform.
+              </p>
+              <div>
+                <!-- <div><a href="/register-page" class="btn-get-started scrollto">Register</a></div> -->
+                <center>
+                  <a href="https://acmiemsb.iem.edu.in/" target="_blank"
+                    ><button
+                      type="button"
+                      id="mbtn"
+                      class="btn btn-warning mx-3 d-flex align-items-center"
+                      data-aos="fade-up"
+                      style="border-radius: 1.5rem"
+                    >
+                      View on Website
+                    </button></a
+                  >
+                </center>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="about" class="about">
+        <div class="container" data-aos="fade-up">
+          <table class="table">
+            <tr>
+              <th scope="col" colspan="2" style="text-align: center">
+                Chief Patron
+              </th>
+            </tr>
+            <tr>
+              <td class="tac">
+                Prof. Dr. Satyajit Chakrabarti, President, IEM, Kolkata
+              </td>
+            </tr>
+            <tr>
+              <th scope="col" colspan="2" style="text-align: center">Patron</th>
+            </tr>
+            <tr>
+              <td class="tac">
+                Dr. Satyajit Chakrabarti, Director, IEM, Kolkata
+              </td>
+            </tr>
+          </table>
+
+          <table class="table">
+            <tbody>
+              <th colspan="2" style="text-align: center">Advisors</th>
+              <tr>
+                <td>Dr. Sajal Dasgupta, Vice Chancellor, UEM, Kolkata</td>
+                <td>Dr. Arun Kumar Bar, Principal, IEM, Kolkata</td>
+              </tr>
+              <tr>
+                <td>
+                  Dr. Anupam Bhattacharyya, Principal, Management, IEM, Kolkata
+                </td>
+                <td>Prof. Subrata Basak, Principal, BBA, IEM, Kolkata</td>
+              </tr>
+              <tr>
+                <td>Mrs. Banani Chakrabarti, Registrar, IEM, Kolkata</td>
+                <td>Dr. Sukalyan Goswami, Registrar, UEM, Kolkata</td>
+              </tr>
+              <tr>
+                <td>Prof. P. K. Banerjee, Dean - Management, IEM, Kolkata</td>
+                <td>
+                  Dr. Debika Bhattacharyya, Dean - Academics, IEM, Kolkata
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Dr. Mohuya Chakraborty, Dean - Faculty Affairs, IEM, Kolkata
+                </td>
+                <td>Dr. Rajiv Ganguly, Dean, UEM, Kolkata</td>
+              </tr>
+              <tr>
+                <td>Dr. Malay Gangopadhyay, HOD, ECE, IEM, Kolkata</td>
+                <td>
+                  Dr. Moutusi Biswas Singh, HOD, IT & IOT-CSBT, IEM, Kolkata
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Dr. Sanghamitra Poddar, HOD, Student Affairs & Alumni
+                  Relations, IEM, Kolkata
+                </td>
+                <td>Prof. Tapas Kumar Datta, HOD, EE, IEM, Kolkata</td>
+              </tr>
+              <tr>
+                <td>Dr. Arun Kumar Bar, HOD, ME & EEE, IEM, Kolkata</td>
+                <td>Prof. Prabir Kumar Das, HOD, BSH, IEM, Kolkata</td>
+              </tr>
+              <tr>
+                <td>
+                  Dr. Abhishek Bhattacharyya, HOD, BBA & MSc, IEM, Kolkata
+                </td>
+                <td>Dr. Rabin Majumdar, HOD, BCA, IEM, Kolkata</td>
+              </tr>
+              <tr>
+                <td>Dr. Sujit Dutta, HOD, MBA, IEM, Kolkata</td>
+                <td>Prof. Amartya Mukherjee, HOD, CSE - AIML, IEM, Kolkata</td>
+              </tr>
+              <th colspan="2" style="text-align: center">
+                Faculty Coordinators
+              </th>
+              <tr>
+                <td>
+                  Prof. Tufan Saha, CSE, IEM, Kolkata
+                  <p style="font-size: 14px">
+                    +91-9331849216, tufan.saha@iemcal.com
+                  </p>
+                </td>
+                <td>
+                  Dr. Indraneel Mukhopadhyay, HOD, CSE, IEM, Kolkata
+                  <p style="font-size: 14px">
+                    +91-9433552806, imukhopadhyay@iemcal.com
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Dr. Nilanjana Dutta Roy, CSE, IEM, Kolkata
+                  <p style="font-size: 14px">
+                    +91-9434305663, nilanjana.duttaroy@iemcal.com
+                  </p>
+                </td>
+
+                <td>
+                  Prof. Sumanta Chakraborty, CSE, IEM, Kolkata
+                  <p style="font-size: 14px">
+                    +91-9239449718, sumanta.chakraborty@iemcal.com
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  Prof. Bavrabi Ghosh, CSE, IEM, Kolkata
+                  <p style="font-size: 14px">
+                    +91-7044236629, bavrabi.ghosh@iemcal.com
+                  </p>
+                </td>
+
+                <!-- <td>Dr. Indraneel Mukhopadhyay, HOD, CSE, IEM, Kolkata</td> -->
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <!-- <section id="clients" class="clients section-bg">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2></h2>
+            <p>Organized By:</p>
+          </div>
+
+          <div
+            class="clients-slider swiper"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="swiper-wrapper align-items-center">
+
+              <div class="swiper-slide">
+                <a
+                  href="https://www.linkedin.com/school/institute-of-engineering-management-iem/"
+                  target="_blank"
+                >
+                  <img
+                    src="/public/assets/img/clients/client-9.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </a>
+              </div>
+
+
+              <div class="swiper-slide">
+                <a
+                  href="https://www.linkedin.com/company/gdsciem/"
+                  target="_blank"
+                >
+                  <img
+                    src="/public/assets/img/clients/client-4.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a
+                  href="https://www.linkedin.com/company/official-csi-iem/"
+                  target="_blank"
+                >
+                  <img
+                    src="/public/assets/img/clients/client-6.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a
+                  href="https://www.linkedin.com/company/acm-iem/"
+                  target="_blank"
+                >
+                  <img
+                    src="/public/assets/img/clients/client-10.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a
+                  href="https://www.linkedin.com/company/acm-iem/"
+                  target="_blank"
+                >
+                  <img
+                    src="/public/assets/img/clients/client-7.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a
+                  href="https://www.linkedin.com/company/acm-iem/"
+                  target="_blank"
+                >
+                  <img
+                    src="/public/assets/img/clients/client-7.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+      <br><br> -->
+      <!-- ======= F.A.Q Section ======= -->
+      <section id="faq" class="faq section-bg">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>F.A.Q</h2>
+            <p>Frequently Asked Questions</p>
+          </div>
+
+          <ul class="faq-list" data-aos="fade-up" data-aos-delay="100">
+            <li>
+              <div
+                data-bs-toggle="collapse"
+                class="collapsed question"
+                href="#faq1"
+              >
+                What is DIVERSION?
+                <i class="bi bi-chevron-down icon-show"></i
+                ><i class="bi bi-chevron-up icon-close"></i>
+              </div>
+              <div id="faq1" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  DIVERSION is an event organized by IEM-ACM Student Chapter
+                  which encourages participants to contribute in open-source. By
+                  contributing to an open-source project, participants receive
+                  immediate feedback on their development and programming
+                  skills.
+                </p>
+              </div>
+            </li>
+
+            <li>
+              <div
+                data-bs-toggle="collapse"
+                href="#faq2"
+                class="collapsed question"
+              >
+                How does DIVERSION benefit students?
+                <i class="bi bi-chevron-down icon-show"></i
+                ><i class="bi bi-chevron-up icon-close"></i>
+              </div>
+              <div id="faq2" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  If you are young, early in their career, or a newbie in
+                  programming, Open Source is the best way to get started. By
+                  contributing to an open-source project, participants receive
+                  immediate feedback on their development and programming
+                  skills.
+                  <br />
+                  DIVERSION is the best platform for you to kickstart
+                  open-sourcing through sessions and working on projects with an
+                  additional benefit of swags.
+                </p>
+              </div>
+            </li>
+
+            <li>
+              <div
+                data-bs-toggle="collapse"
+                href="#faq3"
+                class="collapsed question"
+              >
+                What are the perks of DIVERSION 2022?
+                <i class="bi bi-chevron-down icon-show"></i
+                ><i class="bi bi-chevron-up icon-close"></i>
+              </div>
+              <div id="faq3" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  DIVERSION 2022 will have engaging speakers/workshops
+                  throughout the event to keep participants motivated about
+                  their applications as well as provide mentors to help with
+                  technical debugging.
+                  <br />
+                  People can contribute to open-source projects in fields like
+                  AI and ML, app development, web development, cyber security,
+                  etc. We also have projects based on hardware-related domains
+                  like IoT and robotics. If your idea is unique, we would help
+                  you get a free patent.
+                  <br />
+                  You can compete with your own project idea and we would be
+                  more than happy to help you achieve that. The only thing that
+                  must be in your idea is that it should be scalable so that
+                  more participants can work on it. The perks will include
+                  swags.
+                </p>
+              </div>
+            </li>
+
+            <li>
+              <div
+                data-bs-toggle="collapse"
+                href="#faq4"
+                class="collapsed question"
+              >
+                Why should you Apply?
+                <i class="bi bi-chevron-down icon-show"></i
+                ><i class="bi bi-chevron-up icon-close"></i>
+              </div>
+              <div id="faq4" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  With mentors, participants and speakers from all over the
+                  globe, Diversion truly provides you an international platform
+                  to exhibit your passion towards Open-Source. Boasting of a
+                  plethora of projects from several domains to contribute to,
+                  Diversion also allows you to introduce your own scalable and
+                  unique projects. Apart from exciting swag kits and handsome
+                  cash prizes for the best contributors and most unique
+                  projects, it offers you a wonderful chance to expand your
+                  network along with several fellow open-source enthusiasts from
+                  the community.
+                </p>
+              </div>
+            </li>
+
+            <li>
+              <div
+                data-bs-toggle="collapse"
+                href="#faq5"
+                class="collapsed question"
+              >
+                What are the eligibility criteria of DIVERSION 2022?
+                <i class="bi bi-chevron-down icon-show"></i
+                ><i class="bi bi-chevron-up icon-close"></i>
+              </div>
+              <div id="faq5" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  There are no eligibility criteria. Whether you’re a student or
+                  an experienced professional, anyone is welcome to participate
+                  in this program, i.e., it’s open for everyone across the
+                  globe.
+                </p>
+              </div>
+            </li>
+
+            <li>
+              <div
+                data-bs-toggle="collapse"
+                href="#faq6"
+                class="collapsed question"
+              >
+                When is the event happening and in which mode?
+                <i class="bi bi-chevron-down icon-show"></i
+                ><i class="bi bi-chevron-up icon-close"></i>
+              </div>
+              <div id="faq6" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  The event is being conducted in online mode. Registrations are
+                  opening from 5th December, 2021.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- End F.A.Q Section -->
+
+      <br />
+
+      <!-- ======= Contact Us Section ======= -->
+      <section id="contact" class="contact">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2></h2>
+            <p>Contact Us</p>
+          </div>
+
+          <div class="row">
+            <!-- <div
+              class="col-lg-5 d-flex align-items-stretch"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            > -->
+            <!-- <div class="info">
+                <div class="address">
+                  <i class="bi bi-geo-alt"></i>
+                  <h4>Location:</h4>
+                  <p>A108 Adam Street, New York, NY 535022</p>
+                </div>
+
+                <div class="email">
+                  <i class="bi bi-envelope"></i>
+                  <h4>Email:</h4>
+                  <p>info@example.com</p>
+                </div>
+
+                <div class="phone">
+                  <i class="bi bi-phone"></i>
+                  <h4>Call:</h4>
+                  <p>+1 5589 55488 55s</p>
+                </div>
+              </div> 
+            </div> -->
+
+            <div
+              class="col-lg-12 mt-5 mt-lg-0 d-flex align-items-stretch"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <form action="/contactus" method="post" class="node-email-form">
+                <div class="row">
+                  <div class="form-group col-md-6">
+                    <label for="name">Your Name</label>
+                    <input
+                      type="text"
+                      name="cname"
+                      class="form-control"
+                      id="cname"
+                      placeholder="Your Name"
+                      required
+                    />
+                  </div>
+                  <div class="form-group col-md-6 mt-3 mt-md-0">
+                    <label for="name">Your Email</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      name="cemail"
+                      id="cemail"
+                      placeholder="Your Email"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="form-group mt-3">
+                  <label for="name">Subject</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="csubject"
+                    id="csubject"
+                    placeholder="Subject"
+                    required
+                  />
+                </div>
+                <div class="form-group mt-3">
+                  <label for="name">Message</label>
+                  <textarea
+                    class="form-control"
+                    name="cmessage"
+                    rows="10"
+                    required
+                  ></textarea>
+                </div>
+                <div class="my-3">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">
+                    Your message has been sent. Thank you!
+                  </div>
+                </div>
+                <div class="text-center">
+                  <input
+                    type="submit"
+                    name="submit"
+                    value="Send Message"
+                    class="btn btn-warning mx-3 d-flex align-items-center"
+                  />
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Contact Us Section -->
+    </main>
+    <!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-md-6 footer-contact">
+              <h3>Diversion</h3>
+              <p>
+                <!-- A108 Adam Street <br />
+                New York, NY 535022<br />
+                United States <br /><br /> -->
+                <br />
+                <br />
+                <!-- <strong>Phone:</strong> +1 5589 55488 55<br /> -->
+                <strong>Email : </strong
+                ><a href="mailto:acm@iemcal.com">acm@iemcal.com</a><br />
+              </p>
+            </div>
+
+            <div class="col-lg-4 col-md-6 footer-links">
+              <h4>Useful Links</h4>
+              <ul>
+                <li>
+                  <i class="bx bx-chevron-right"></i> <a href="#">Home</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#tracks">Tracks</a>
+                </li>
+                <!-- <li>
+                  <i class="bx bx-chevron-right"></i> <a href="#">tracks</a>
+                </li> -->
+                <!-- <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#">Terms of service</a>
+                </li> -->
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="/guidelines">Guidelines</a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Our tracks</h4>
+              <ul>
+                <li>
+                  <i class="bx bx-chevron-right"></i> <a href="#">Web Design</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#">Web Development</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#">Product Management</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i> <a href="#">Marketing</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#">Graphic Design</a>
+                </li>
+              </ul>
+            </div> -->
+
+            <div class="col-lg-4 col-md-6 footer-links">
+              <h4>Our Social Networks</h4>
+              <p>Reach to our socials to know more about us</p>
+              <div class="social-links mt-3">
+                <a
+                  href="https://twitter.com/AcmIem"
+                  class="twitter"
+                  target="_blank"
+                  ><i class="bx bxl-twitter"></i
+                ></a>
+                <a
+                  href="https://www.facebook.com/IEMACMStudentChapter"
+                  class="facebook"
+                  target="_blank"
+                  ><i class="bx bxl-facebook"></i
+                ></a>
+                <a
+                  href="https://www.instagram.com/acm_csi_iem/"
+                  class="instagram"
+                  target="_blank"
+                  ><i class="bx bxl-instagram"></i
+                ></a>
+                <!-- <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a> -->
+                <a
+                  href="https://www.linkedin.com/company/acm-iem/"
+                  class="linkedin"
+                  target="_blank"
+                  ><i class="bx bxl-linkedin"></i
+                ></a>
+                <a
+                href="https://www.youtube.com/c/ACMIEM"
+                class="linkedin socl"
+                target="_blank"
+                ><i class="bx bxl-youtube"></i
+              ></a>
+                <!-- <a href="#" class="Github"><i class="bx bxl-github"></i></a> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <!-- Vendor JS Files -->
+    <script src="/public/assets/vendor/aos/aos.js"></script>
+    <script src="/public/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/public/assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="/public/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="/public/assets/vendor/php-email-form/validate.js"></script>
+    <script src="/public/assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="/public/assets/js/main.js"></script>
+    <script src="/public/assets/js/script.js"></script>
+    <!-- bootstrap new -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
